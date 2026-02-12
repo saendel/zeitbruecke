@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verein Zeitbrücke - Heimat in VR erleben</title>
+  <meta name="description" content="Zeitbrücke - Persönliche Erinnerungen in Virtual Reality erlebbar machen. Aktivierung, Biografiearbeit und Begegnung für Menschen im Alter." />
+  <!--
+    Anleitung:
+    - Lege einen Ordner /assets an neben dieser Datei
+    - Ersetze die Bilder/Poster unten durch eigene Dateien:
+      /assets/hero.jpg
+      /assets/session.jpg
+      /assets/behind.jpg
+      /assets/logo.svg (optional)
+    - Videos können als YouTube/Vimeo-Embed in den iframe-Links ersetzt werden
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">Z</div>
+        <div>Zeitbrücke</div>
+      </div>
+      <nav class="menu">
+        <a href="#vision">Vision</a>
+        <a href="#praxis">Praxis</a>
+        <a href="#videos">Einblick</a>
+        <a href="#partner">Mitmachen</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a class="btn" href="#kontakt">Unterstützen</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="kicker">Projekt</div>
+          <h1>«Zeitbrücke - Heimat in VR erleben»</h1>
+          <p class="lead">Persönliche Erinnerungen in Virtual Reality erlebbar machen. Wir bauen Brücken in die eigene Vergangenheit - für Identität, Trost und Begegnung.</p>
+          <div style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap">
+            <a class="btn" href="#partner">Partner werden</a>
+            <a class="btn" style="background:#fff;color:var(--ink);border:1px solid var(--line)" href="#videos">Einblick ansehen</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/hero.jpg" alt="VR-Session im Altersheim" />
+        </div>
+      </div>
+    </section>
+
+    <section id="vision">
+      <div class="container two">
+        <div class="card">
+          <h2>Die Vision</h2>
+          <p>Für viele Menschen im Alter, insbesondere mit Demenz, schrumpft die Welt. Die Verbindung zur persönlichen Vergangenheit kann verloren gehen. Zeitbrücke verwandelt private Fotoalben in begehbare 3D‑Erinnerungswelten - Virtual Reality nicht als Flucht, sondern als Rückkehr zum Wesentlichen.</p>
+          <p class="muted">Es geht nicht um Technologie um der Technologie willen, sondern um ihren empathischen Einsatz als Brückenbauer.</p>
+        </div>
+        <div class="card">
+          <h2>Die biografische Brücke</h2>
+          <p>Aus den privaten Fotos der Bewohner entstehen lebendige Erinnerungsräume, die Wiedererkennung ermöglichen. VR wird zur behutsamen Aktivierung: Staunen, Gespräch und plötzlich aufblühende Erinnerungen bestätigen das enorme Potenzial in der Praxis.</p>
+          <img src="assets/session.jpg" alt="Begleitete VR-Sitzung" style="margin-top:12px;border-radius:14px"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="praxis">
+      <div class="container two">
+        <div>
+          <h2>Aus der Praxis gewachsen</h2>
+          <p>Seit 2025 führen wir VR‑Sessions in Altersheimen durch - erstmals erprobt in Kooperation mit der Höheren Fachschule medi in Bern. Die Inhalte sind keine Konsumprodukte, sondern eigens gefilmte 360°‑Aufnahmen vertrauter Orte in der Schweiz.</p>
+          <ul class="list muted">
+            <li>Fahrt mit einem alten Berner Tram</li>
+            <li>Spaziergang am Thunersee</li>
+            <li>Besuch der Fasnacht Luzern</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <img src="assets/behind.jpg" alt="Aufnahmen hinter den Kulissen"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="partner" class="cta">
+      <div class="container cta-grid">
+        <div>
+          <h2>Förderbedarf & Chance</h2>
+          <p>Für diesen auf Wiedererkennen basierenden Ansatz suchen wir Partner für eine Pionierleistung:</p>
+          <ul class="list">
+            <li>Praxispilot‑Heime, die den Mehrwert des Persönlichen für ihre Bewohner nutzen möchten</li>
+            <li>Wissenschaftliche Partner zur Erforschung der Wirkung biografischer VR‑Ansätze</li>
+          </ul>
+        </div>
+        <div class="pill">
+          <div>Verein Zeitbrücke</div>
+          <div class="small">Sandro Wittwer · Michael Litzko</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <div class="container two">
+        <div class="card">
+          <h2>Kontakt</h2>
+          <p class="muted">Schreiben Sie uns - wir melden uns gerne für eine Zusammenarbeit, Präsentation oder Unterstützungsmöglichkeiten.</p>
+          <form onsubmit="event.preventDefault(); alert('Danke! Bitte E-Mail im Code hinterlegen oder Formular an Server anbinden.');">
+            <label>Ihr Name<br/>
+              <input required style="width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);margin:6px 0 12px"/>
+            </label>
+            <label>E‑Mail<br/>
+              <input type="email" required style="width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);margin:6px 0 12px"/>
+            </label>
+            <label>Nachricht<br/>
+              <textarea rows="4" required style="width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);margin:6px 0 12px"></textarea>
+            </label>
+            <button class="btn" type="submit">Senden</button>
+          </form>
+        </div>
+        <div class="card">
+          <h2>Impressum</h2>
+          <p class="small muted">Verein Zeitbrücke<br/>
+          (Adresse hier ergänzen)<br/>
+          E‑Mail: info@zeitbruecke.ch<br/>
+          Web: www.zeitbruecke.ch</p>
+          <p class="small muted">Datenschutz: Diese Seite verwendet keine Cookies. (Bei Bedarf anpassen.)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div class="small">© <span id="y"></span> Verein Zeitbrücke</div>
+      <div class="small" style="text-align:right">Handgemacht in der Schweiz</div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
